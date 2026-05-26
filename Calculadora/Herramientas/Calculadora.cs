@@ -30,7 +30,10 @@ namespace EspacioCalculadora
             }
             dato/=termino;
         }
-
+        public void Limpiar()
+        {
+            dato=0;
+        }
         public double Resultado()
         {
             return dato;
