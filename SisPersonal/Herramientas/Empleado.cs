@@ -35,17 +35,17 @@ class Empleado
     }
     public double Salario()
     {   
-        double Adicional;
+        double Adicional=0;
         if (Antiguedad()<=20)
         {
-            Adicional=Antiguedad()*1/100*SueldoBasico;
+            Adicional=Antiguedad()*0.01*SueldoBasico;
         } else
         {
-            Adicional=25/100*SueldoBasico;
+            Adicional=0.25*SueldoBasico;
         }
         if (Cargo==Cargos.Especialista || Cargo==Cargos.Ingeniero)
         {
-            Adicional+=Adicional*50/100;
+            Adicional+=Adicional*0.5;
         }
         if (EstadoCivil=='C')
         {
