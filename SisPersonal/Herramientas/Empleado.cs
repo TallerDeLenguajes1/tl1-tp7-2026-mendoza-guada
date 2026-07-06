@@ -1,4 +1,4 @@
-class Empleado
+public class Empleado
 {
     public string? Nombre {get; set; }
     public string? Apellido {get; set; }
@@ -57,7 +57,7 @@ class Empleado
 
 }
 
-enum Cargos
+public enum Cargos
 {
     Auxiliar=0,
     Administrativo=1,
