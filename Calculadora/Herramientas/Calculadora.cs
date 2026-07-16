@@ -2,13 +2,8 @@ namespace EspacioCalculadora
 {
     public class Calculadora
     {
-        public double dato;
+        public double dato {get; set;}
 
-        /*public double Dato
-        {
-            get=>dato;
-        }
-        */
         public void Sumar(double termino)
         {
             dato+=termino;

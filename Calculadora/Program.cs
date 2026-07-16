@@ -7,6 +7,11 @@ do
 {
     Console.WriteLine("¿Qué operación desea realizar?\n1-Suma\n2-Resta\n3-Multiplicación\n4-División");
     int opcion = int.Parse(Console.ReadLine());
+    if (opcion<1 || opcion>4)
+    {
+        Console.WriteLine("Opción incorrecta");
+        continue;
+    }
     Console.WriteLine("Ingrese el primer número: ");
     double num1 = double.Parse(Console.ReadLine());
     Console.WriteLine("Ingrese el segundo número: ");
